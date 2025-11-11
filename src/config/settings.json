@@ -1,0 +1,39 @@
+{
+  "http": {
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (compatible; RedNoteScraper/1.0; +https://bitbash.dev)",
+      "Accept": "application/json,text/plain,*/*",
+      "Accept-Language": "en-US,en;q=0.9"
+    }
+  },
+  "rateLimit": {
+    "callsPerMinute": 30,
+    "burst": 5
+  },
+  "search": {
+    "baseUrl": "https://www.xiaohongshu.com/web_api/sns/v1/search/notes",
+    "pageSize": 20,
+    "timeoutSeconds": 10,
+    "maxItems": 200
+  },
+  "comment": {
+    "baseUrl": "https://www.xiaohongshu.com/web_api/sns/v5/note/comments",
+    "pageSize": 20,
+    "timeoutSeconds": 10,
+    "maxItemsPerNote": 200
+  },
+  "profile": {
+    "baseUrl": "https://www.xiaohongshu.com/web_api/sns/v3/user/detail",
+    "timeoutSeconds": 10
+  },
+  "userPosts": {
+    "baseUrl": "https://www.xiaohongshu.com/web_api/sns/v1/user/posts",
+    "pageSize": 20,
+    "timeoutSeconds": 10,
+    "maxItemsPerUser": 200
+  },
+  "output": {
+    "directory": "data",
+    "filenamePrefix": "rednote_output_"
+  }
+}
